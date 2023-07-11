@@ -10,6 +10,8 @@ public abstract class BasePage {
     WebDriver driver;
     WebDriverWait wait;
     final String URL = "https://step7.my.salesforce.com/";
+    public static final By New_BUTTON = By.xpath("//div[@title ='New']");
+    public static final By SAVE_BUTTON = By.xpath("//div[@title ='Save']");
 
 
     public BasePage(WebDriver driver) {

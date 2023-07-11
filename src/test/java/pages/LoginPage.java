@@ -36,7 +36,4 @@ public class LoginPage extends BasePage {
         super(driver);
     }
 
-    public void openWebsite() {
-        driver.get(URL);
     }
-}
