@@ -8,6 +8,7 @@ public class AccountDetailsPage extends BasePage{
     String fieldValue = "//span[text() = '%s']/ancestor::records-record-layout-item//span[contains(@class, 'field-value')]";
     public static final By DETAILS_LINK =By.xpath("://a[@data-label='Details'] ");
     public AccountDetailsPage(WebDriver driver) {
+
         super(driver);
     }
 

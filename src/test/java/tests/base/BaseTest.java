@@ -1,5 +1,5 @@
 
-package tests;
+package tests.base;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -13,13 +13,11 @@ import java.util.concurrent.TimeUnit;
 public class BaseTest {
 
     WebDriver driver;
-
-    LoginPage loginPage;
+    public LoginPage loginPage;
     HomePage homePage;
-
-    AccountListPage accountListPage;
-    AccountModalPage accountModalPage;
-    AccountDetailsPage accountDetailsPage;
+    public AccountListPage accountListPage;
+    public AccountModalPage accountModalPage;
+    public AccountDetailsPage accountDetailsPage;
 
 
     @BeforeMethod

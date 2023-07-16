@@ -4,16 +4,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class AccountListPage extends BasePage {
-
-
     public static final By BREADCRUMB_LABEL = By.xpath("//div(@class, 'slds-breadcrumb')]//span[text()= 'Accounts']");
 
-
-
-
-
-
     public AccountListPage(WebDriver driver) {
+
         super(driver);
     }
 
@@ -28,6 +22,7 @@ public class AccountListPage extends BasePage {
     }
         @Override
                 public boolean isPageOpen(){
-            return isExist(BREADCRUMB_LABEL);
+
+        return isExist(BREADCRUMB_LABEL);
         }
     }

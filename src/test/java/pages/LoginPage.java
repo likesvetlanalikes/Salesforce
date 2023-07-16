@@ -10,11 +10,15 @@ public class LoginPage extends BasePage {
     public static final By PASSWORD = By.id("password");
     public static final By LOGIN_BUTTON = By.id("Login");
 
+    public LoginPage(WebDriver driver) {
+        super(driver);
+    }
 
     @Override
     public boolean isPageOpen() {
         return isExist(LOGIN_BUTTON);
     }
+
     public LoginPage open() {
         driver.get(URL);
         return this;
@@ -26,14 +30,8 @@ public class LoginPage extends BasePage {
         return this;
     }
 
-    public HomePage clickLoginButton(){
+    public HomePage clickLoginButton() {
         driver.findElement(LOGIN_BUTTON).click();
         return new HomePage(driver);
     }
-
-
-    public LoginPage(WebDriver driver) {
-        super(driver);
-    }
-
-    }
+}

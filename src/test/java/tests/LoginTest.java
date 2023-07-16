@@ -2,7 +2,8 @@ package tests;
 
 import org.testng.annotations.Test;
 import static org.testng.Assert.assertTrue;
-import pages.HomePage;
+
+import tests.base.BaseTest;
 
 
 public class LoginTest extends BaseTest {

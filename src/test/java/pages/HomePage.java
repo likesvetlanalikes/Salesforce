@@ -8,6 +8,7 @@ public class HomePage extends BasePage {
     public static final By HOME_LINK = By.xpath("//span[text() = 'Home']");
 
     public HomePage(WebDriver driver) {
+
         super(driver);
     }
 
