@@ -16,9 +16,9 @@ public class AccountsTest extends BaseTest{
         .clickNewButton();
 
         Account account = new Account("Test Name","555555","77777","wwww.hhh.ru","Investor",
-                "Banking", "5","10 000", "New company", "Chkalova",
-                "Vitebsk", "210027","Belarus","Belarus","Titova",
-                "Minsk", "Belarus", "172500", "Belarus");
+                "Banking", "5","10 000", "New company", "Lenina",
+                "Vitebsk", "210025","Belarus","Belarus","Gorky",
+                "Minsk", "Belarus", "123789", "Belarus");
         //заполнить все поля
         accountModalPage.create(account);
         //нажать кнопку save
@@ -41,7 +41,7 @@ public class AccountsTest extends BaseTest{
         Assert.assertEquals(accountDetailsPage.getFieldValue("Shipping State"),account.getShippingState());
         Assert.assertEquals(accountDetailsPage.getFieldValue("Shipping Zip"),account.getShippingZip());
         Assert.assertEquals(accountDetailsPage.getFieldValue("Shipping Country"),account.getShippingCountry());
-        //проверить создание
+
 
 
 
